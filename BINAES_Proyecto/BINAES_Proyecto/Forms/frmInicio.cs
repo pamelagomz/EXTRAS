@@ -14,7 +14,7 @@ namespace BINAES_Proyecto.Forms
         {
             InitializeComponent();
             listaImagenes = new List<Bitmap>();
-            listaImagenes.Add(Resources._1);
+            listaImagenes.Add(Resources.Lengua_y_Literatura);
             listaImagenes.Add(Resources._2);
             listaImagenes.Add(Resources._3__1_);
             listaImagenes.Add(Resources._4);

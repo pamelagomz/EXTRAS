@@ -282,6 +282,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Bienvenida.png" />
+    <Content Include="Resources\Bienvenida1.png" />
+    <Content Include="Resources\Lengua_y_Literatura.png" />
     <None Include="Resources\LoQueElVientoSeLlevo.jpg" />
     <None Include="Resources\LosMiserables.jpg" />
     <None Include="Resources\PedroParamo.jpg" />

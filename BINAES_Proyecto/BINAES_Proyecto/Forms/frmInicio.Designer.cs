@@ -203,7 +203,7 @@ namespace BINAES_Proyecto.Forms
             // picBienvenido
             // 
             this.picBienvenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBienvenido.Image = global::BINAES_Proyecto.Properties.Resources._1;
+            this.picBienvenido.Image = global::BINAES_Proyecto.Properties.Resources.Lengua_y_Literatura;
             this.picBienvenido.Location = new System.Drawing.Point(3, 3);
             this.picBienvenido.Name = "picBienvenido";
             this.picBienvenido.Size = new System.Drawing.Size(528, 127);
@@ -234,7 +234,7 @@ namespace BINAES_Proyecto.Forms
             // tlpAvisos
             // 
             this.tlpAvisos.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpAvisos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.tlpAvisos.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.tlpAvisos.ColumnCount = 3;
             this.tlpAvisos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpAvisos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -256,7 +256,7 @@ namespace BINAES_Proyecto.Forms
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (4)))), ((int) (((byte) (36)))), ((int) (((byte) (60)))));
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.pictureBox3.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(359, 145);
             this.pictureBox3.Name = "pictureBox3";
@@ -268,7 +268,7 @@ namespace BINAES_Proyecto.Forms
             // picInicio5
             // 
             this.picInicio5.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.picInicio5.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (248)))), ((int) (((byte) (232)))), ((int) (((byte) (197)))));
+            this.picInicio5.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.picInicio5.Image = ((System.Drawing.Image) (resources.GetObject("picInicio5.Image")));
             this.picInicio5.Location = new System.Drawing.Point(181, 145);
             this.picInicio5.Name = "picInicio5";
@@ -280,18 +280,19 @@ namespace BINAES_Proyecto.Forms
             // picInicio4
             // 
             this.picInicio4.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.picInicio4.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.picInicio4.Image = ((System.Drawing.Image) (resources.GetObject("picInicio4.Image")));
             this.picInicio4.Location = new System.Drawing.Point(3, 145);
             this.picInicio4.Name = "picInicio4";
             this.picInicio4.Size = new System.Drawing.Size(172, 119);
-            this.picInicio4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picInicio4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picInicio4.TabIndex = 3;
             this.picInicio4.TabStop = false;
             // 
             // PicInicio1
             // 
             this.PicInicio1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.PicInicio1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (206)))), ((int) (((byte) (236)))));
+            this.PicInicio1.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.PicInicio1.Image = ((System.Drawing.Image) (resources.GetObject("PicInicio1.Image")));
             this.PicInicio1.Location = new System.Drawing.Point(3, 3);
             this.PicInicio1.Name = "PicInicio1";
@@ -303,7 +304,7 @@ namespace BINAES_Proyecto.Forms
             // picInicio2
             // 
             this.picInicio2.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.picInicio2.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (177)))), ((int) (((byte) (221)))), ((int) (((byte) (223)))));
+            this.picInicio2.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.picInicio2.Image = ((System.Drawing.Image) (resources.GetObject("picInicio2.Image")));
             this.picInicio2.Location = new System.Drawing.Point(181, 3);
             this.picInicio2.Name = "picInicio2";
@@ -315,7 +316,7 @@ namespace BINAES_Proyecto.Forms
             // picInicio3
             // 
             this.picInicio3.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.picInicio3.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (224)))), ((int) (((byte) (135)))));
+            this.picInicio3.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (5)))), ((int) (((byte) (10)))), ((int) (((byte) (48)))));
             this.picInicio3.Image = ((System.Drawing.Image) (resources.GetObject("picInicio3.Image")));
             this.picInicio3.Location = new System.Drawing.Point(359, 3);
             this.picInicio3.Name = "picInicio3";
