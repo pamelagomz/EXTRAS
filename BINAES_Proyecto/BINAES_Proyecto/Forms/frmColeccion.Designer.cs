@@ -33,6 +33,10 @@ namespace BINAES_Proyecto.Forms
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmColeccion));
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Mostrar = new System.Windows.Forms.TabPage();
+            this.tlpBusqueda = new System.Windows.Forms.TableLayoutPanel();
+            this.btnMostrarColeccion = new System.Windows.Forms.Button();
+            this.dgvMostrarUser = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtNombreColeccion = new System.Windows.Forms.TextBox();
@@ -68,10 +72,6 @@ namespace BINAES_Proyecto.Forms
             this.txtIDActualizarColeccion = new System.Windows.Forms.TextBox();
             this.btnActualizarColeccion = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.Mostrar = new System.Windows.Forms.TabPage();
-            this.tlpMostrarUsuario = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvMostrarUser = new System.Windows.Forms.DataGridView();
-            this.btnMostrarColeccion = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,48 +81,104 @@ namespace BINAES_Proyecto.Forms
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tabControl1.SuspendLayout();
+            this.Mostrar.SuspendLayout();
+            this.tlpBusqueda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dgvMostrarUser)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.Mostrar.SuspendLayout();
-            this.tlpMostrarUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarUser)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.Mostrar);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.Mostrar);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(90, 30);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(10, 8);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(778, 634);
+            this.tabControl1.Size = new System.Drawing.Size(908, 634);
             this.tabControl1.TabIndex = 3;
+            // 
+            // Mostrar
+            // 
+            this.Mostrar.Controls.Add(this.tlpBusqueda);
+            this.Mostrar.Location = new System.Drawing.Point(4, 34);
+            this.Mostrar.Name = "Mostrar";
+            this.Mostrar.Padding = new System.Windows.Forms.Padding(3);
+            this.Mostrar.Size = new System.Drawing.Size(900, 596);
+            this.Mostrar.TabIndex = 2;
+            this.Mostrar.Text = "Mostrar las colecciones disponibles";
+            this.Mostrar.UseVisualStyleBackColor = true;
+            // 
+            // tlpBusqueda
+            // 
+            this.tlpBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpBusqueda.ColumnCount = 3;
+            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.70335F));
+            this.tlpBusqueda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.39235F));
+            this.tlpBusqueda.Controls.Add(this.btnMostrarColeccion, 2, 0);
+            this.tlpBusqueda.Controls.Add(this.dgvMostrarUser, 0, 1);
+            this.tlpBusqueda.Location = new System.Drawing.Point(24, 48);
+            this.tlpBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tlpBusqueda.Name = "tlpBusqueda";
+            this.tlpBusqueda.RowCount = 3;
+            this.tlpBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.71429F));
+            this.tlpBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.33333F));
+            this.tlpBusqueda.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.95238F));
+            this.tlpBusqueda.Size = new System.Drawing.Size(836, 505);
+            this.tlpBusqueda.TabIndex = 3;
+            // 
+            // btnMostrarColeccion
+            // 
+            this.btnMostrarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMostrarColeccion.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnMostrarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnMostrarColeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMostrarColeccion.Location = new System.Drawing.Point(609, 3);
+            this.btnMostrarColeccion.Name = "btnMostrarColeccion";
+            this.btnMostrarColeccion.Size = new System.Drawing.Size(224, 48);
+            this.btnMostrarColeccion.TabIndex = 1;
+            this.btnMostrarColeccion.Text = "Mostrar Colecciones";
+            this.btnMostrarColeccion.UseVisualStyleBackColor = false;
+            this.btnMostrarColeccion.Click += new System.EventHandler(this.btnMostrarColeccion_Click);
+            // 
+            // dgvMostrarUser
+            // 
+            this.dgvMostrarUser.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMostrarUser.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMostrarUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tlpBusqueda.SetColumnSpan(this.dgvMostrarUser, 3);
+            this.dgvMostrarUser.Location = new System.Drawing.Point(3, 57);
+            this.dgvMostrarUser.Name = "dgvMostrarUser";
+            this.dgvMostrarUser.RowHeadersWidth = 62;
+            this.dgvMostrarUser.RowTemplate.Height = 28;
+            this.dgvMostrarUser.Size = new System.Drawing.Size(830, 414);
+            this.dgvMostrarUser.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel3);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(770, 596);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(900, 596);
             this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Agregar Colección";
+            this.tabPage3.Text = "Agregar una colección";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 14;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158185F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158187F));
@@ -156,7 +212,7 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel3.Controls.Add(this.lblGeneroColeccion, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.lblTipoColeccion, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.label9, 10, 1);
-            this.tableLayoutPanel3.Controls.Add(this.btnCrearColeccion, 10, 11);
+            this.tableLayoutPanel3.Controls.Add(this.btnCrearColeccion, 1, 11);
             this.tableLayoutPanel3.Controls.Add(this.cmbTipoColeccion, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.cmbAreaColeccion, 1, 9);
             this.tableLayoutPanel3.Controls.Add(this.lblAreaColeccion, 1, 8);
@@ -198,71 +254,63 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(766, 595);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(896, 595);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // txtNombreColeccion
             // 
-            this.txtNombreColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombreColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.txtNombreColeccion, 5);
-            this.txtNombreColeccion.Location = new System.Drawing.Point(57, 114);
+            this.txtNombreColeccion.Location = new System.Drawing.Point(67, 114);
             this.txtNombreColeccion.Name = "txtNombreColeccion";
-            this.txtNombreColeccion.Size = new System.Drawing.Size(264, 26);
+            this.txtNombreColeccion.Size = new System.Drawing.Size(310, 28);
             this.txtNombreColeccion.TabIndex = 2;
             // 
             // lblGeneroColeccion
             // 
-            this.lblGeneroColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGeneroColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.lblGeneroColeccion, 4);
-            this.lblGeneroColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGeneroColeccion.Location = new System.Drawing.Point(57, 148);
+            this.lblGeneroColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblGeneroColeccion.Location = new System.Drawing.Point(67, 148);
             this.lblGeneroColeccion.Name = "lblGeneroColeccion";
-            this.lblGeneroColeccion.Size = new System.Drawing.Size(210, 37);
+            this.lblGeneroColeccion.Size = new System.Drawing.Size(247, 37);
             this.lblGeneroColeccion.TabIndex = 3;
             this.lblGeneroColeccion.Text = "Género";
             this.lblGeneroColeccion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // lblTipoColeccion
             // 
-            this.lblTipoColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTipoColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.lblTipoColeccion, 4);
-            this.lblTipoColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoColeccion.Location = new System.Drawing.Point(57, 222);
+            this.lblTipoColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblTipoColeccion.Location = new System.Drawing.Point(67, 222);
             this.lblTipoColeccion.Name = "lblTipoColeccion";
-            this.lblTipoColeccion.Size = new System.Drawing.Size(210, 37);
+            this.lblTipoColeccion.Size = new System.Drawing.Size(247, 37);
             this.lblTipoColeccion.TabIndex = 5;
             this.lblTipoColeccion.Text = "Tipo de colección";
             this.lblTipoColeccion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.label9, 4);
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(543, 37);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label9.Location = new System.Drawing.Point(635, 37);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(220, 37);
+            this.label9.Size = new System.Drawing.Size(258, 37);
             this.label9.TabIndex = 9;
             this.label9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // btnCrearColeccion
             // 
-            this.btnCrearColeccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(129)))), ((int)(((byte)(239)))));
+            this.btnCrearColeccion.BackColor = System.Drawing.Color.Green;
             this.tableLayoutPanel3.SetColumnSpan(this.btnCrearColeccion, 3);
             this.btnCrearColeccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCrearColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnCrearColeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCrearColeccion.Location = new System.Drawing.Point(543, 410);
+            this.btnCrearColeccion.Location = new System.Drawing.Point(67, 410);
             this.btnCrearColeccion.Name = "btnCrearColeccion";
-            this.btnCrearColeccion.Size = new System.Drawing.Size(156, 45);
+            this.btnCrearColeccion.Size = new System.Drawing.Size(184, 45);
             this.btnCrearColeccion.TabIndex = 12;
             this.btnCrearColeccion.Text = "Crear colección";
             this.btnCrearColeccion.UseVisualStyleBackColor = false;
@@ -273,9 +321,9 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel3.SetColumnSpan(this.cmbTipoColeccion, 5);
             this.cmbTipoColeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoColeccion.FormattingEnabled = true;
-            this.cmbTipoColeccion.Location = new System.Drawing.Point(57, 262);
+            this.cmbTipoColeccion.Location = new System.Drawing.Point(67, 262);
             this.cmbTipoColeccion.Name = "cmbTipoColeccion";
-            this.cmbTipoColeccion.Size = new System.Drawing.Size(262, 28);
+            this.cmbTipoColeccion.Size = new System.Drawing.Size(262, 30);
             this.cmbTipoColeccion.TabIndex = 19;
             // 
             // cmbAreaColeccion
@@ -283,21 +331,19 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel3.SetColumnSpan(this.cmbAreaColeccion, 5);
             this.cmbAreaColeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAreaColeccion.FormattingEnabled = true;
-            this.cmbAreaColeccion.Location = new System.Drawing.Point(57, 336);
+            this.cmbAreaColeccion.Location = new System.Drawing.Point(67, 336);
             this.cmbAreaColeccion.Name = "cmbAreaColeccion";
-            this.cmbAreaColeccion.Size = new System.Drawing.Size(262, 28);
+            this.cmbAreaColeccion.Size = new System.Drawing.Size(262, 30);
             this.cmbAreaColeccion.TabIndex = 20;
             // 
             // lblAreaColeccion
             // 
-            this.lblAreaColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAreaColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.lblAreaColeccion, 4);
-            this.lblAreaColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAreaColeccion.Location = new System.Drawing.Point(57, 296);
+            this.lblAreaColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblAreaColeccion.Location = new System.Drawing.Point(67, 296);
             this.lblAreaColeccion.Name = "lblAreaColeccion";
-            this.lblAreaColeccion.Size = new System.Drawing.Size(210, 37);
+            this.lblAreaColeccion.Size = new System.Drawing.Size(247, 37);
             this.lblAreaColeccion.TabIndex = 10;
             this.lblAreaColeccion.Text = "Área";
             this.lblAreaColeccion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -307,35 +353,31 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel3.SetColumnSpan(this.cmbGenero, 5);
             this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Location = new System.Drawing.Point(57, 188);
+            this.cmbGenero.Location = new System.Drawing.Point(67, 188);
             this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(262, 28);
+            this.cmbGenero.Size = new System.Drawing.Size(262, 30);
             this.cmbGenero.TabIndex = 22;
             // 
             // lblInformacionColeccion
             // 
-            this.lblInformacionColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInformacionColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.lblInformacionColeccion, 5);
-            this.lblInformacionColeccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInformacionColeccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lblInformacionColeccion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblInformacionColeccion.Location = new System.Drawing.Point(57, 37);
+            this.lblInformacionColeccion.Location = new System.Drawing.Point(67, 37);
             this.lblInformacionColeccion.Name = "lblInformacionColeccion";
-            this.lblInformacionColeccion.Size = new System.Drawing.Size(264, 37);
+            this.lblInformacionColeccion.Size = new System.Drawing.Size(310, 37);
             this.lblInformacionColeccion.TabIndex = 0;
             this.lblInformacionColeccion.Text = "Nueva Colección";
             // 
             // lblNombreColeccion
             // 
-            this.lblNombreColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNombreColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.lblNombreColeccion, 4);
-            this.lblNombreColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreColeccion.Location = new System.Drawing.Point(57, 74);
+            this.lblNombreColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblNombreColeccion.Location = new System.Drawing.Point(67, 74);
             this.lblNombreColeccion.Name = "lblNombreColeccion";
-            this.lblNombreColeccion.Size = new System.Drawing.Size(210, 37);
+            this.lblNombreColeccion.Size = new System.Drawing.Size(247, 37);
             this.lblNombreColeccion.TabIndex = 1;
             this.lblNombreColeccion.Text = "Nombre de la colección";
             this.lblNombreColeccion.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -343,20 +385,18 @@ namespace BINAES_Proyecto.Forms
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(770, 596);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(900, 596);
             this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Editar/Eliminar";
+            this.tabPage4.Text = "Editar o eliminar";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.ColumnCount = 14;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158185F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158187F));
@@ -374,7 +414,7 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.140301F));
             this.tableLayoutPanel4.Controls.Add(this.panel3, 1, 11);
             this.tableLayoutPanel4.Controls.Add(this.panel4, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(-10, -26);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(136, 24);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 16;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
@@ -401,7 +441,7 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(790, 648);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(774, 598);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // panel3
@@ -413,7 +453,7 @@ namespace BINAES_Proyecto.Forms
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.btnEliminarColeccion);
             this.panel3.Controls.Add(this.txtidEliminarColeccion);
-            this.panel3.Location = new System.Drawing.Point(59, 443);
+            this.panel3.Location = new System.Drawing.Point(58, 410);
             this.panel3.Name = "panel3";
             this.tableLayoutPanel4.SetRowSpan(this.panel3, 4);
             this.panel3.Size = new System.Drawing.Size(671, 134);
@@ -421,10 +461,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label21
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label21.Location = new System.Drawing.Point(38, 40);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(436, 29);
@@ -434,10 +472,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label20.Location = new System.Drawing.Point(208, 8);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(152, 25);
@@ -446,11 +482,9 @@ namespace BINAES_Proyecto.Forms
             // 
             // btnEliminarColeccion
             // 
-            this.btnEliminarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminarColeccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(129)))), ((int)(((byte)(239)))));
-            this.btnEliminarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminarColeccion.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (54)))), ((int) (((byte) (129)))), ((int) (((byte) (239)))));
+            this.btnEliminarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnEliminarColeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEliminarColeccion.Location = new System.Drawing.Point(480, 49);
             this.btnEliminarColeccion.Name = "btnEliminarColeccion";
@@ -485,7 +519,7 @@ namespace BINAES_Proyecto.Forms
             this.panel4.Controls.Add(this.txtIDActualizarColeccion);
             this.panel4.Controls.Add(this.btnActualizarColeccion);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(59, 43);
+            this.panel4.Location = new System.Drawing.Point(58, 40);
             this.panel4.Name = "panel4";
             this.tableLayoutPanel4.SetRowSpan(this.panel4, 10);
             this.panel4.Size = new System.Drawing.Size(671, 340);
@@ -493,7 +527,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // btnBuscarIDcoleccion
             // 
-            this.btnBuscarIDcoleccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarIDcoleccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnBuscarIDcoleccion.Location = new System.Drawing.Point(230, 82);
             this.btnBuscarIDcoleccion.Name = "btnBuscarIDcoleccion";
             this.btnBuscarIDcoleccion.Size = new System.Drawing.Size(110, 37);
@@ -513,10 +547,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label7.Location = new System.Drawing.Point(399, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 25);
@@ -535,10 +567,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label6.Location = new System.Drawing.Point(399, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(166, 25);
@@ -557,10 +587,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label5.Location = new System.Drawing.Point(38, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 28);
@@ -570,9 +598,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // txtActualizarColeccion
             // 
-            this.txtActualizarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtActualizarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.txtActualizarColeccion.Location = new System.Drawing.Point(42, 162);
             this.txtActualizarColeccion.Name = "txtActualizarColeccion";
             this.txtActualizarColeccion.Size = new System.Drawing.Size(254, 30);
@@ -580,10 +606,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label4.Location = new System.Drawing.Point(38, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(228, 28);
@@ -593,10 +617,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label22.Location = new System.Drawing.Point(38, 83);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 28);
@@ -606,10 +628,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label17
             // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label17.Location = new System.Drawing.Point(34, 40);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(494, 25);
@@ -626,11 +646,9 @@ namespace BINAES_Proyecto.Forms
             // 
             // btnActualizarColeccion
             // 
-            this.btnActualizarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizarColeccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(129)))), ((int)(((byte)(239)))));
-            this.btnActualizarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnActualizarColeccion.BackColor = System.Drawing.Color.Green;
+            this.btnActualizarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnActualizarColeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnActualizarColeccion.Location = new System.Drawing.Point(423, 289);
             this.btnActualizarColeccion.Name = "btnActualizarColeccion";
@@ -642,10 +660,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label12.Location = new System.Drawing.Point(88, 14);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(216, 26);
@@ -653,82 +669,9 @@ namespace BINAES_Proyecto.Forms
             this.label12.Text = "Editar Colección";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Mostrar
-            // 
-            this.Mostrar.Controls.Add(this.tlpMostrarUsuario);
-            this.Mostrar.Location = new System.Drawing.Point(4, 34);
-            this.Mostrar.Name = "Mostrar";
-            this.Mostrar.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Mostrar.Size = new System.Drawing.Size(770, 596);
-            this.Mostrar.TabIndex = 2;
-            this.Mostrar.Text = "Mostrar";
-            this.Mostrar.UseVisualStyleBackColor = true;
-            // 
-            // tlpMostrarUsuario
-            // 
-            this.tlpMostrarUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpMostrarUsuario.ColumnCount = 4;
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.93578F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.06422F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.93578F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.06422F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
-            this.tlpMostrarUsuario.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
-            this.tlpMostrarUsuario.Controls.Add(this.dgvMostrarUser, 1, 2);
-            this.tlpMostrarUsuario.Controls.Add(this.btnMostrarColeccion, 2, 0);
-            this.tlpMostrarUsuario.Location = new System.Drawing.Point(3, 3);
-            this.tlpMostrarUsuario.Name = "tlpMostrarUsuario";
-            this.tlpMostrarUsuario.RowCount = 4;
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.287926F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.572755F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.73065F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.25387F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.287926F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.572755F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.73065F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.25387F));
-            this.tlpMostrarUsuario.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpMostrarUsuario.Size = new System.Drawing.Size(764, 589);
-            this.tlpMostrarUsuario.TabIndex = 2;
-            // 
-            // dgvMostrarUser
-            // 
-            this.dgvMostrarUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMostrarUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tlpMostrarUsuario.SetColumnSpan(this.dgvMostrarUser, 2);
-            this.dgvMostrarUser.Location = new System.Drawing.Point(95, 89);
-            this.dgvMostrarUser.Name = "dgvMostrarUser";
-            this.dgvMostrarUser.RowHeadersWidth = 62;
-            this.dgvMostrarUser.RowTemplate.Height = 28;
-            this.dgvMostrarUser.Size = new System.Drawing.Size(511, 399);
-            this.dgvMostrarUser.TabIndex = 0;
-            // 
-            // btnMostrarColeccion
-            // 
-            this.btnMostrarColeccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(29)))), ((int)(((byte)(64)))));
-            this.btnMostrarColeccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMostrarColeccion.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarColeccion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnMostrarColeccion.Location = new System.Drawing.Point(404, 3);
-            this.btnMostrarColeccion.Name = "btnMostrarColeccion";
-            this.btnMostrarColeccion.Size = new System.Drawing.Size(202, 48);
-            this.btnMostrarColeccion.TabIndex = 1;
-            this.btnMostrarColeccion.Text = "Mostrar Colecciones";
-            this.btnMostrarColeccion.UseVisualStyleBackColor = false;
-            this.btnMostrarColeccion.Click += new System.EventHandler(this.btnMostrarColeccion_Click);
-            // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 5);
             this.textBox1.Location = new System.Drawing.Point(17, 63);
             this.textBox1.Name = "textBox1";
@@ -737,10 +680,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(17, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 68);
@@ -750,10 +691,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(17, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 37);
@@ -781,10 +720,8 @@ namespace BINAES_Proyecto.Forms
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.Location = new System.Drawing.Point(17, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 37);
@@ -803,9 +740,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 14;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158185F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.158187F));
@@ -851,13 +786,16 @@ namespace BINAES_Proyecto.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(778, 634);
+            this.ClientSize = new System.Drawing.Size(908, 634);
             this.Controls.Add(this.tabControl1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "frmColeccion";
             this.Load += new System.EventHandler(this.frmColeccion_Load);
             this.tabControl1.ResumeLayout(false);
+            this.Mostrar.ResumeLayout(false);
+            this.tlpBusqueda.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dgvMostrarUser)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -867,14 +805,12 @@ namespace BINAES_Proyecto.Forms
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.Mostrar.ResumeLayout(false);
-            this.tlpMostrarUsuario.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarUser)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-
         }
+
+        private System.Windows.Forms.TableLayoutPanel tlpBusqueda;
 
         private System.Windows.Forms.Button btnBuscarIDcoleccion;
 
@@ -928,7 +864,6 @@ namespace BINAES_Proyecto.Forms
         private System.Windows.Forms.Button btnCrearColeccion;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage Mostrar;
-        private System.Windows.Forms.TableLayoutPanel tlpMostrarUsuario;
         private System.Windows.Forms.DataGridView dgvMostrarUser;
         private System.Windows.Forms.Button btnMostrarColeccion;
 
