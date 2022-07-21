@@ -505,12 +505,12 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.018518F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.090909F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.818182F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.818182F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.36364F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(896, 550);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.562737F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.520913F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.96992F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.766917F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(896, 562);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // panel4
@@ -537,10 +537,10 @@ namespace BINAES_Proyecto.Forms
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.txtIDActualizarEvento);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(67, 36);
+            this.panel4.Location = new System.Drawing.Point(67, 37);
             this.panel4.Name = "panel4";
             this.tableLayoutPanel4.SetRowSpan(this.panel4, 12);
-            this.panel4.Size = new System.Drawing.Size(826, 371);
+            this.panel4.Size = new System.Drawing.Size(826, 392);
             this.panel4.TabIndex = 23;
             // 
             // btnActualizarObjetivos
@@ -597,9 +597,9 @@ namespace BINAES_Proyecto.Forms
             this.btnActualizarEvento.BackColor = System.Drawing.Color.Green;
             this.btnActualizarEvento.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnActualizarEvento.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnActualizarEvento.Location = new System.Drawing.Point(500, 337);
+            this.btnActualizarEvento.Location = new System.Drawing.Point(498, 339);
             this.btnActualizarEvento.Name = "btnActualizarEvento";
-            this.btnActualizarEvento.Size = new System.Drawing.Size(166, 40);
+            this.btnActualizarEvento.Size = new System.Drawing.Size(166, 37);
             this.btnActualizarEvento.TabIndex = 17;
             this.btnActualizarEvento.Text = "Actualizar";
             this.btnActualizarEvento.UseVisualStyleBackColor = false;
@@ -744,10 +744,10 @@ namespace BINAES_Proyecto.Forms
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.btnEliminarEvento);
             this.panel3.Controls.Add(this.txtidEliminarEvento);
-            this.panel3.Location = new System.Drawing.Point(67, 422);
+            this.panel3.Location = new System.Drawing.Point(67, 443);
             this.panel3.Name = "panel3";
             this.tableLayoutPanel4.SetRowSpan(this.panel3, 2);
-            this.panel3.Size = new System.Drawing.Size(826, 101);
+            this.panel3.Size = new System.Drawing.Size(826, 102);
             this.panel3.TabIndex = 22;
             // 
             // label21
@@ -784,7 +784,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // txtidEliminarEvento
             // 
-            this.txtidEliminarEvento.Location = new System.Drawing.Point(241, 68);
+            this.txtidEliminarEvento.Location = new System.Drawing.Point(241, 58);
             this.txtidEliminarEvento.Name = "txtidEliminarEvento";
             this.txtidEliminarEvento.Size = new System.Drawing.Size(48, 28);
             this.txtidEliminarEvento.TabIndex = 19;

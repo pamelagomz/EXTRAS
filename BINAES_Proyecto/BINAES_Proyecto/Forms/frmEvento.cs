@@ -209,15 +209,10 @@ namespace BINAES_Proyecto.Forms
             eve.ID = Convert.ToInt32(txtIDActualizarEvento.Text);
            
 
-            if (EventoDAO.VerificarDisponibilidadFechas(eve) == true)
-            {
+           
                 EventoDAO.ActualizarEvento(eve);
                 MessageBox.Show("Actualizado con éxito");
-            }
-            else
-            {
-                MessageBox.Show("Este evento no puede ser ingresado, ya que el área será utilizada en ese horario");
-            }
+
         }
         
         //Click del botón Actualizar imagen, nos permite actualizar la imagen de un evento 

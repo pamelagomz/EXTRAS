@@ -157,7 +157,7 @@ namespace BINAES_Proyecto
             using (SqlConnection connection = new SqlConnection(cadena))
             {
                 string noquery =
-                    "UPDATE USUARIO SET nombre = @nuevonombre, ocupacion = @nuevaocupacion, direccion = @nuevadireccion, correo = @nuevocorreo, telefono = @nuevotelefono, institucion = @nuevainstitucin, contra = @nuevacontra, id_rol = @nuevoid_rol  " +
+                    "UPDATE USUARIO SET nombre = @nuevonombre, ocupacion = @nuevaocupacion, direccion = @nuevadireccion, correo = @nuevocorreo, telefono = @nuevotelefono, institucion = @nuevainstitucin, contra = @nuevacontra, id_rol = @nuevoid_rol " +
                     "WHERE id = @id";
 
                 SqlCommand command = new SqlCommand(noquery, connection);
@@ -168,8 +168,7 @@ namespace BINAES_Proyecto
                 command.Parameters.AddWithValue("@nuevotelefono", user.UserTelefono);
                 command.Parameters.AddWithValue("@nuevainstitucin", user.UserInstitucion);
                 command.Parameters.AddWithValue("@nuevacontra", user.Contra);
-                command.Parameters.AddWithValue("@nuevacontra", user.Contra);
-                command.Parameters.AddWithValue("@nuevoid_rol", user.Contra);
+                command.Parameters.AddWithValue("@nuevoid_rol", user.id_rol);
                 command.Parameters.AddWithValue("@id", user.UsuarioID);
                 
 

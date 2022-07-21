@@ -91,7 +91,7 @@ namespace BINAES_Proyecto.Forms
         /*Click para actualizar usuario*/
         private void btnActualizarUsuario_Click_1(object sender, EventArgs e)
         {
-            if (txtNombreUsuarios.TextLength > 0 && txtOcupacion.TextLength > 0 && txtDireccionUsuario.TextLength > 0 && txtInstitucion.TextLength > 0 && txtTelefono.TextLength > 0 && txtCorreo.TextLength > 0 && imagen.Length > 0 && txtContrasena.TextLength > 0 && cmbRolusuario.Text.Length > 0)
+            if (txtActualizarNombre.TextLength > 0 && txtActualizarOcupacion.TextLength > 0 && txtActualizarDireccion.TextLength > 0 && txtActualizarInstitucion.TextLength > 0 && txtActualizarTelefono.TextLength > 0 && txtActualizarCorreo.TextLength > 0 && imagen.Length > 0 && txtActualizarContra.TextLength > 0 && cmbActualizarRol.Text.Length > 0)
             {
                 Usuario user = new Usuario();
                 user.UsuarioID = Convert.ToInt32(txtIDatualizar.Text);
