@@ -492,7 +492,7 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel4.Controls.Add(this.panel3, 1, 14);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(128, 18);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 16;
+            this.tableLayoutPanel4.RowCount = 17;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
@@ -505,10 +505,11 @@ namespace BINAES_Proyecto.Forms
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.018518F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.777778F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.864198F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.03086F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.090909F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.818182F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.818182F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.36364F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(896, 550);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
@@ -536,10 +537,10 @@ namespace BINAES_Proyecto.Forms
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.txtIDActualizarEvento);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(67, 37);
+            this.panel4.Location = new System.Drawing.Point(67, 36);
             this.panel4.Name = "panel4";
             this.tableLayoutPanel4.SetRowSpan(this.panel4, 12);
-            this.panel4.Size = new System.Drawing.Size(826, 382);
+            this.panel4.Size = new System.Drawing.Size(826, 371);
             this.panel4.TabIndex = 23;
             // 
             // btnActualizarObjetivos
@@ -743,18 +744,18 @@ namespace BINAES_Proyecto.Forms
             this.panel3.Controls.Add(this.label20);
             this.panel3.Controls.Add(this.btnEliminarEvento);
             this.panel3.Controls.Add(this.txtidEliminarEvento);
-            this.panel3.Location = new System.Drawing.Point(67, 457);
+            this.panel3.Location = new System.Drawing.Point(67, 422);
             this.panel3.Name = "panel3";
             this.tableLayoutPanel4.SetRowSpan(this.panel3, 2);
-            this.panel3.Size = new System.Drawing.Size(826, 90);
+            this.panel3.Size = new System.Drawing.Size(826, 101);
             this.panel3.TabIndex = 22;
             // 
             // label21
             // 
             this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label21.Location = new System.Drawing.Point(82, 28);
+            this.label21.Location = new System.Drawing.Point(86, 31);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(396, 37);
+            this.label21.Size = new System.Drawing.Size(396, 24);
             this.label21.TabIndex = 21;
             this.label21.Text = "Ingrese el número de ID del evento a eliminar";
             this.label21.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -762,9 +763,9 @@ namespace BINAES_Proyecto.Forms
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label20.Location = new System.Drawing.Point(208, 8);
+            this.label20.Location = new System.Drawing.Point(197, 8);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(158, 32);
+            this.label20.Size = new System.Drawing.Size(158, 23);
             this.label20.TabIndex = 20;
             this.label20.Text = "Eliminar evento";
             // 
@@ -783,7 +784,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // txtidEliminarEvento
             // 
-            this.txtidEliminarEvento.Location = new System.Drawing.Point(248, 77);
+            this.txtidEliminarEvento.Location = new System.Drawing.Point(241, 68);
             this.txtidEliminarEvento.Name = "txtidEliminarEvento";
             this.txtidEliminarEvento.Size = new System.Drawing.Size(48, 28);
             this.txtidEliminarEvento.TabIndex = 19;

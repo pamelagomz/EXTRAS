@@ -65,30 +65,44 @@ namespace BINAES_Proyecto.Forms
         /*Click para crear ejemplar*/
         private void btnCrearEjemplar_Click(object sender, EventArgs e)
         {
-            if(txtNombreEjemplar.TextLength > 0 && dtpFechaEjemplar.Text.Length >0 && cmbColeccionEjemplar.Text.Length > 0 && cmbEditorial.Text.Length >0 && cmbFomato.Text.Length >0 && cmbIdioma.Text.Length > 0 && imagen.Length > 0 && (txtIsbn.TextLength>0 || txtissn.TextLength > 0 || txtDoi.TextLength >0 )){
-            Ejemplar ejem = new Ejemplar();
-            ejem.Nombre_Ejemplar = txtNombreEjemplar.Text;
-            ejem.Fecha_de_publicacion = Convert.ToDateTime(dtpFechaEjemplar.Value);
-            ejem.Coleccion = cmbColeccionEjemplar.SelectedValue.ToString();
-            ejem.Editorial = cmbEditorial.SelectedValue.ToString();
-            ejem.Formato = cmbFomato.SelectedValue.ToString();
-            ejem.Idioma = cmbIdioma.SelectedValue.ToString();
-            ejem.Portada = imagen;
-            ejem.ISBN = txtIsbn.Text;
-            ejem.ISSN = txtissn.Text;
-            ejem.DOI = txtDoi.Text;
-
-            picImagenEjemplar.Image = new Bitmap(imagen);
-
-            EjemplarDAO.IngresarEjemplar(ejem);
-            MessageBox.Show("Ingresado con éxito el numero de id de este ejemplar es " + EjemplarDAO.nuevoidEejmplar());
-            }
-            else
+            try
             {
-                MessageBox.Show("Por favor ingrese todos los campos requeridos", "Informacion invalida.", MessageBoxButtons.OK, MessageBoxIcon.Error  );
+                if (txtNombreEjemplar.TextLength > 0 && dtpFechaEjemplar.Text.Length > 0 &&
+                    cmbColeccionEjemplar.Text.Length > 0 && cmbEditorial.Text.Length > 0 && cmbFomato.Text.Length > 0 &&
+                    cmbIdioma.Text.Length > 0 && imagen.Length > 0 &&
+                    (txtIsbn.TextLength > 0 || txtissn.TextLength > 0 || txtDoi.TextLength > 0))
+                {
+                    Ejemplar ejem = new Ejemplar();
+                    ejem.Nombre_Ejemplar = txtNombreEjemplar.Text;
+                    ejem.Fecha_de_publicacion = Convert.ToDateTime(dtpFechaEjemplar.Value);
+                    ejem.Coleccion = cmbColeccionEjemplar.SelectedValue.ToString();
+                    ejem.Editorial = cmbEditorial.SelectedValue.ToString();
+                    ejem.Formato = cmbFomato.SelectedValue.ToString();
+                    ejem.Idioma = cmbIdioma.SelectedValue.ToString();
+                    ejem.Portada = imagen;
+                    ejem.ISBN = txtIsbn.Text;
+                    ejem.ISSN = txtissn.Text;
+                    ejem.DOI = txtDoi.Text;
 
+                    picImagenEjemplar.Image = new Bitmap(imagen);
+
+                    EjemplarDAO.IngresarEjemplar(ejem);
+                    MessageBox.Show("Ingresado con éxito el numero de id de este ejemplar es " +
+                                    EjemplarDAO.nuevoidEejmplar());
+                }
+                else
+                {
+                    MessageBox.Show("Por favor ingrese todos los campos requeridos", "Informacion invalida.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
-            
+            catch (Exception E)
+            {
+                MessageBox.Show("Por favor ingrese una imagen del nuevo ejemplar", "Información inválida.",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
         
         /*Click para buscar ejemplar*/

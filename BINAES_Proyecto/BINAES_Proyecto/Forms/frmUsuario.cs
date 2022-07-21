@@ -23,26 +23,50 @@ namespace BINAES_Proyecto.Forms
         /*Click para crear un usuario*/
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
-            if(txtNombreUsuarios.TextLength > 0 && txtOcupacion.TextLength >0 && txtDireccionUsuario.TextLength > 0 && txtInstitucion.TextLength > 0 && txtTelefono.TextLength >0 && txtCorreo.TextLength > 0 && imagen.Length > 0 && txtContrasena.TextLength> 0 && cmbRolusuario.Text.Length >0) { 
-                Usuario user = new Usuario();
-                user.UsuarioNombre = txtNombreUsuarios.Text;
-                user.UserOcupacion = txtOcupacion.Text;
-                user.UserDireccion = txtDireccionUsuario.Text;
-                user.UserInstitucion = txtInstitucion.Text;
-                user.UserTelefono = txtTelefono.Text;
-                user.UserCorreo = txtCorreo.Text;
-                user.fotoUsuario = imagen;
-                user.Contra = txtContrasena.Text;
-                user.id_rol = Convert.ToInt32(cmbRolusuario.SelectedValue.ToString());
+            if (UsuarioDAO.telefono_validar(txtTelefono.Text) == true) 
+            {
+                try
+                {
+                    if (txtNombreUsuarios.TextLength > 0 && txtOcupacion.TextLength > 0 &&
+                        txtDireccionUsuario.TextLength > 0 && txtInstitucion.TextLength > 0 &&
+                        txtTelefono.TextLength > 0 && txtCorreo.TextLength > 0 &&
+                        imagen.Length > 0 && txtContrasena.TextLength > 0 && cmbRolusuario.Text.Length > 0)
+                    {
+                        Usuario user = new Usuario();
+                        user.UsuarioNombre = txtNombreUsuarios.Text;
+                        user.UserOcupacion = txtOcupacion.Text;
+                        user.UserDireccion = txtDireccionUsuario.Text;
+                        user.UserInstitucion = txtInstitucion.Text;
+                        user.UserCorreo = txtCorreo.Text;
+                        user.UserTelefono = txtTelefono.Text;
+                        user.fotoUsuario = imagen;
+                        user.Contra = txtContrasena.Text;
+                        user.id_rol = Convert.ToInt32(cmbRolusuario.SelectedValue.ToString());
 
-                picImagenUsuario.Image = new Bitmap(imagen);
+                        picImagenUsuario.Image = new Bitmap(imagen);
 
-                UsuarioDAO.IngresarUsuario(user);
-                MessageBox.Show("Ingresado con exito");
+                        UsuarioDAO.IngresarUsuario(user);
+                        MessageBox.Show("Ingresado con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Por favor ingrese todos los campos requeridos", "Información inválida.",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+                }
+                catch (Exception E)
+                {
+                    MessageBox.Show("Por favor ingrese una imagen de usuario", "Información inválida.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
             else
             {
-                MessageBox.Show("Por favor ingrese todos los campos requeridos", "Informacion invalida.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El formato del teléfono ingresado no coincide con el salvadoreño, por favor vuelta a ingresarlo.");
+                Console.WriteLine(Environment.NewLine);
+                MessageBox.Show("Ejemplo a tomar en cuenta: +50377350090" + Environment.NewLine + "Otro ejemplo: +50377350090");
 
             }
 

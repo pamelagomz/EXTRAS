@@ -539,10 +539,11 @@ namespace BINAES_Proyecto.Forms
             // cmbActualizarArea
             // 
             this.cmbActualizarArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbActualizarArea.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.cmbActualizarArea.FormattingEnabled = true;
             this.cmbActualizarArea.Location = new System.Drawing.Point(404, 240);
             this.cmbActualizarArea.Name = "cmbActualizarArea";
-            this.cmbActualizarArea.Size = new System.Drawing.Size(224, 33);
+            this.cmbActualizarArea.Size = new System.Drawing.Size(224, 32);
             this.cmbActualizarArea.TabIndex = 28;
             // 
             // label7
@@ -559,10 +560,11 @@ namespace BINAES_Proyecto.Forms
             // cmbActualizarTipo
             // 
             this.cmbActualizarTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbActualizarTipo.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.cmbActualizarTipo.FormattingEnabled = true;
             this.cmbActualizarTipo.Location = new System.Drawing.Point(404, 162);
             this.cmbActualizarTipo.Name = "cmbActualizarTipo";
-            this.cmbActualizarTipo.Size = new System.Drawing.Size(224, 33);
+            this.cmbActualizarTipo.Size = new System.Drawing.Size(224, 32);
             this.cmbActualizarTipo.TabIndex = 26;
             // 
             // label6
@@ -579,10 +581,11 @@ namespace BINAES_Proyecto.Forms
             // cmbActualizarGenero
             // 
             this.cmbActualizarGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbActualizarGenero.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.cmbActualizarGenero.FormattingEnabled = true;
             this.cmbActualizarGenero.Location = new System.Drawing.Point(42, 240);
             this.cmbActualizarGenero.Name = "cmbActualizarGenero";
-            this.cmbActualizarGenero.Size = new System.Drawing.Size(262, 33);
+            this.cmbActualizarGenero.Size = new System.Drawing.Size(262, 32);
             this.cmbActualizarGenero.TabIndex = 24;
             // 
             // label5
@@ -599,6 +602,7 @@ namespace BINAES_Proyecto.Forms
             // txtActualizarColeccion
             // 
             this.txtActualizarColeccion.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtActualizarColeccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.txtActualizarColeccion.Location = new System.Drawing.Point(42, 162);
             this.txtActualizarColeccion.Name = "txtActualizarColeccion";
             this.txtActualizarColeccion.Size = new System.Drawing.Size(254, 30);
@@ -639,6 +643,7 @@ namespace BINAES_Proyecto.Forms
             // 
             // txtIDActualizarColeccion
             // 
+            this.txtIDActualizarColeccion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.txtIDActualizarColeccion.Location = new System.Drawing.Point(86, 83);
             this.txtIDActualizarColeccion.Name = "txtIDActualizarColeccion";
             this.txtIDActualizarColeccion.Size = new System.Drawing.Size(48, 30);

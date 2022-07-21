@@ -349,7 +349,6 @@ namespace BINAES_Proyecto.Forms
             // 
             // picImagenEjemplar
             // 
-            this.picImagenEjemplar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tlpEjemplar.SetColumnSpan(this.picImagenEjemplar, 4);
             this.picImagenEjemplar.Location = new System.Drawing.Point(570, 39);
             this.picImagenEjemplar.Name = "picImagenEjemplar";
@@ -394,7 +393,7 @@ namespace BINAES_Proyecto.Forms
             this.btnCrearPalabrasClave.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCrearPalabrasClave.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (54)))), ((int) (((byte) (129)))), ((int) (((byte) (239)))));
             this.tlpEjemplar.SetColumnSpan(this.btnCrearPalabrasClave, 2);
-            this.btnCrearPalabrasClave.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnCrearPalabrasClave.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnCrearPalabrasClave.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCrearPalabrasClave.Location = new System.Drawing.Point(570, 530);
             this.btnCrearPalabrasClave.Name = "btnCrearPalabrasClave";
@@ -940,7 +939,7 @@ namespace BINAES_Proyecto.Forms
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(274, 24);
             this.label20.TabIndex = 20;
-            this.label20.Text = "Eliminar usuario";
+            this.label20.Text = "Eliminar ejemplar";
             // 
             // btnEliminarEjemplar
             // 

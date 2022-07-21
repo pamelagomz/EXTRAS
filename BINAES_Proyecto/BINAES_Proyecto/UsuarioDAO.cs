@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using BINAES_Proyecto.Properties;
 
@@ -34,6 +35,20 @@ namespace BINAES_Proyecto
                 connection.Close();
             }
 
+        }
+        
+        
+        public static bool telefono_validar(string numero)
+        {
+            Regex rex = new Regex(@"(\+503)?(2|6|7)([0-9]){7}");
+            if (rex.IsMatch(numero))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static List<Usuario> MostrarUsuarios()

@@ -109,7 +109,7 @@ namespace BINAES_Proyecto.Forms
             OpenFileDialog obtener = new OpenFileDialog();
             obtener.InitialDirectory = "C:\\";
             obtener.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp, *.png)| *.jpg; *.jpeg; *.gif; *.bmp, *.png";
-
+            
             if (obtener.ShowDialog() == DialogResult.OK)
             {
                 imagen = obtener.FileName;
@@ -151,32 +151,44 @@ namespace BINAES_Proyecto.Forms
         //Click del botón agregar, con el cual podemos agregar mas eventos a la base de datos 
         private void btnAgregarE_Click(object sender, EventArgs e)
         {
-            if (txtNombreE.TextLength >0 && nudCantidad.Value > 0 && dtpIniico.Text.Length >0 && dtpFinalizacion.Text.Length >0 && imagen.Length >0 ) { 
-                Evento eve = new Evento();
-
-                eve.Titulo_Evento = txtNombreE.Text;
-                eve.Cantidad_de_asistentes = Convert.ToInt32(nudCantidad.Value);
-                eve.id_area = Convert.ToInt32(cmbEArea.SelectedValue);
-                eve.Inicio_del_vento = Convert.ToDateTime(dtpIniico.Value);
-                eve.Finalizacion_del_evento = Convert.ToDateTime(dtpFinalizacion.Value);
-                eve.Portada = imagen;
-            
-
-                if (EventoDAO.VerificarDisponibilidadFechas(eve) == true)
+            try
+            {
+                if (txtNombreE.TextLength > 0 && nudCantidad.Value > 0 && dtpIniico.Text.Length > 0 &&
+                    dtpFinalizacion.Text.Length > 0 && imagen.Length > 0)
                 {
-                    EventoDAO.IngresarEvento(eve);
-                    MessageBox.Show("Ingresado con éxito");
+                    Evento eve = new Evento();
+
+                    eve.Titulo_Evento = txtNombreE.Text;
+                    eve.Cantidad_de_asistentes = Convert.ToInt32(nudCantidad.Value);
+                    eve.id_area = Convert.ToInt32(cmbEArea.SelectedValue);
+                    eve.Inicio_del_vento = Convert.ToDateTime(dtpIniico.Value);
+                    eve.Finalizacion_del_evento = Convert.ToDateTime(dtpFinalizacion.Value);
+                    eve.Portada = imagen;
+
+
+                    if (EventoDAO.VerificarDisponibilidadFechas(eve) == true)
+                    {
+                        EventoDAO.IngresarEvento(eve);
+                        MessageBox.Show("Ingresado con éxito");
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "Este evento no puede ser ingresado, ya que el área será utilizada en ese horario");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Este evento no puede ser ingresado, ya que el área será utilizada en ese horario");
+                    MessageBox.Show("Por favor ingrese todos los campos requeridos", "Informacion invalida.",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
                 }
             }
-            else
+            catch (Exception E)
             {
-                MessageBox.Show("Por favor ingrese todos los campos requeridos", "Informacion invalida.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
+                MessageBox.Show("Por favor ingrese una imagen del evento", "Información inválida.",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 
